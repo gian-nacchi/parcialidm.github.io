@@ -1,0 +1,357 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+}
+
+/* ESTILOS GENERALES */
+body{
+    background-color: #ffffff;
+    font-family: sans-serif;
+    padding-top: 60px;
+    color: black;
+}
+html{
+    scroll-behavior: smooth;
+
+}
+
+main{
+    max-width: 1200px;
+    margin: auto;
+}
+header a{
+    text-decoration: none;
+    color: inherit;
+}
+.header-bg{
+    background-color: rgb(218, 19, 19);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+.header-bg > header{
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+nav ul li{
+    padding: 1rem;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    margin-bottom: 0.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+}
+h1{
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.5rem;
+  padding: 1.2rem 0;
+  text-transform: uppercase;
+}
+
+h2{
+    font-size: 1.2rem;
+    text-align: center;
+    padding-bottom: 10px;
+    margin: 1rem;
+    border-bottom: 2px solid black;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Press Start 2P", system-ui;
+}
+h3{
+    margin: 0.5rem 1rem 2rem;
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: "Russo One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+p {
+    font-family: sans-serif;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+}
+section{
+    margin: 1rem 0;
+    padding: 1rem 0;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid transparent;
+    scroll-margin-top: 80px;
+}
+/* ----------FIN ESTILOS GENERALES------------- */
+
+/* -----------SECCION INICIO -------------*/
+.banner{
+    display: none;
+}
+.primera_seccion{
+    padding: 0 1rem;
+}
+/* -------FIN SECCION INICIO------------ */
+
+/* ==========SECCION CARACTERISTICAS ===========*/
+.caracteristicasPrincipal{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+.caracteristicasProducto p{
+    padding: 1rem;
+}
+.caracteristicasProducto .rowImg{
+    border-top: 1px solid rgb(0, 0, 0);
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+.caracteristicasProducto .rowImg > img{
+    margin: auto; 
+}
+
+/* -------------------FIN SECCION CARACTERISTICAS---------- */
+
+/*---------- SECCION MODO DE JUEGOS --------------*/
+
+.modosJuegos{
+    margin-bottom: 1rem;
+}
+
+.modosJuegos p{
+    padding: 1rem;
+}
+
+.modosJuegos .rowImg{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+.modosJuegos .rowImg > img{
+    margin: auto;
+}
+/* -----------FIN SECCION MODOS DE JUEGOS--------- */
+
+
+/* -----------SECCION DE LA GALERIA---------------- */
+
+.galeria{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+/* .galeria img{
+
+} */
+
+/* -------FIN SECCION DE LA GALERIA-------- */
+
+/*------------- SECCION DEL FORMULARIO --------------*/
+.formularioContacto {
+  max-width: 500px;
+  width: 90%;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.formularioContacto h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+.formularioContacto label {
+  display: block;
+  margin-top: 15px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.formularioContacto input,
+.formularioContacto textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+.formularioContacto button {
+  margin-top: 20px;
+  width: 100%;
+  padding: 12px;
+  background-color:rgb(218, 19, 19);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formularioContacto button:hover {
+  background-color: rgb(218, 19, 19);
+}
+/* --------FIN SECCION DEL FORMULARIO------- */
+
+
+/* ---------------SECCION DEL FOOTER-------------- */
+
+.seccion_footer {
+  background-color: #b0b0b086;
+  color: rgb(0, 0, 0);
+  padding: 1rem 0;
+}
+
+.seccion_footer footer {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.footer_img img {
+  width: 250px;
+  border: 2px solid rgb(0, 0, 0);
+}
+
+.seccion_footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.seccion_footer ul li {
+  margin: 5px 0;
+}
+/* ---------FIN SECCION DEL FOOTER--------- */
+
+
+/*-------- MEDIA QUERY PARA TABLETS------------*/
+
+@media screen and (min-width:576px){ 
+    nav ul{
+        text-align: center;
+        margin-top: 1rem;
+    }
+    nav ul li{
+        display: inline-block;
+        min-width: 150px;
+        border-radius: 10px;
+    }
+    .banner{
+        display: block;
+        border-top: 1px solid black;
+        border-bottom: 1px solid black;
+        margin: 1rem -1.5rem 1.5rem;
+    }
+    section{
+        padding: 1.5rem;
+    }
+    .caracteristicasPrincipal{
+        grid-template-columns: 1fr 1fr;
+    }
+    .caracteristicasProducto{
+        display: flex;
+        flex-direction: column;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.738);
+    }
+    .caracteristicasProducto img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    }
+    
+    .modos_juegos_grupo{
+        margin-top: 1rem;
+    }
+
+    .modos_juegos_vertical{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        border-radius: 10px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.738);
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+
+}
+/* ---------FIN DE LA MEDIA QUERY PARA TABLETS---------- */
+
+
+/* MEDIA QUERY PARA COMPUTADORAS */
+
+
+@media screen and (min-width:993px) {
+   
+  .caracteristicasPrincipal{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+.modos_juegos_grupo{
+    text-align: center;
+    margin: auto;
+}
+.modos_juegos h3{
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    
+}
+.fila{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 3rem;
+    
+}
+
+.rowImg img{
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    display: block;
+}
+
+.rowImg, .texto{
+    flex: 1;
+}
+.texto p{
+    text-align: left;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+
+    .galeria{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
